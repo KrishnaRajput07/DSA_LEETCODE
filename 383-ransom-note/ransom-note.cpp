@@ -6,10 +6,8 @@ public:
             freq[c-'a']++;
         }
         for(char c: ransomNote){
+            if(freq[c-'a']==0) return false;
             freq[c-'a']--;
-        }
-        for(int i=0; i<26; i++){
-            if(freq[i]<0) return false;
         }
         return true;
     }
