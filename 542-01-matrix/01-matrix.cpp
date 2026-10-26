@@ -14,13 +14,13 @@ public:
                 }
             }
         }
+        int dx[]={1,0,-1,0};
+        int dy[]={0,1,0,-1};
         while(!q.empty()){
             auto p=q.front();
             int x=p.first;
             int y=p.second;
             q.pop();
-            int dx[]={1,0,-1,0};
-            int dy[]={0,1,0,-1};
             for(int i=0; i<4; i++){
                 int nx=x+dx[i];
                 int ny=y+dy[i];
